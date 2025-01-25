@@ -83,7 +83,7 @@ const Contact = () => {
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
               onSubmit={handleSendMessage}
             >
-              <h3 className="text-4xl text-accent">Let's work together</h3>
+              <h3 className="text-4xl text-accent">Lets work together</h3>
               <p className="text-white/60">
                 Have an exciting project? Fill out the form, and let’s discuss!
               </p>
