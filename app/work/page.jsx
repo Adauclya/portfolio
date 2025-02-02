@@ -25,7 +25,7 @@ const projects = [
     category: "fullstack",
     title: "Sorabi",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
+      "Aplikasi SORABI (Sistem Optimalisasi Arsip dan Administrasi Berbasis Informasi) merupakan hasil kolaborasi antara beberapa dinas di Kabupaten Karawang, meliputi Bappeda, Dinas Sosial, Dinas Komunikasi dan Informatika, serta didukung oleh Dinas Kependudukan dan Catatan Sipil, Dinas Kesehatan, Dinas Pendidikan, Pemuda dan Olahraga, Bagian Kesra Setda, dan DPMD.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "PHP" }, { name: "Laravel" }],
     image: "/assets/work/sorabi.png",
     live: "https://sorabi.karawangkab.go.id/",
@@ -36,7 +36,7 @@ const projects = [
     category: "fullstack",
     title: "Edukcapil",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
+      "Edukcapil Karawang adalah aplikasi layanan kependudukan dan catatan sipil elektronik yang disediakan oleh Dinas Kependudukan dan Pencatatan Sipil Kabupaten Karawang. Aplikasi ini memudahkan warga Karawang untuk mengurus berbagai dokumen kependudukan secara online, seperti e-KTP, Kartu Keluarga, Akta Kelahiran, dan Akta Kematian.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "PHP" }, { name: "Codeigniter 3" }],
     image: "/assets/work/edukcapil.png",
     live: "https://edukcapil.karawangkab.go.id/",
@@ -47,7 +47,7 @@ const projects = [
     category: "fullstack",
     title: "Infoloker",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
+      "Infoloker Karawang adalah platform informasi lowongan kerja yang ditujukan bagi pencari kerja di wilayah Karawang dan sekitarnya. Platform ini menyediakan berbagai peluang pekerjaan dari berbagai sektor industri, mulai dari manufaktur, jasa, hingga pemerintahan",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "PHP" }, { name: "Codeigniter 3" }],
     image: "/assets/work/infoloker.png",
     live: "https://infoloker.karawangkab.go.id/",
@@ -58,7 +58,7 @@ const projects = [
     category: "fullstack",
     title: "SiapKanda",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
+      "SIAP-KANDA (Sistem Informasi Administrasi Penyelesaian Kerugian Daerah) adalah platform yang dirancang untuk membantu instansi pemerintah dalam mengelola, melacak, dan menyelesaikan kasus-kasus kerugian daerah secara efisien dan transparan. Aplikasi ini memfasilitasi pencatatan kerugian, pengajuan laporan, hingga proses verifikasi dan penyelesaian, serta memberikan pelaporan yang akurat untuk mendukung pengambilan keputusan dan pertanggungjawaban keuangan daerah.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "PHP" }, { name: "Laravel" }],
     image: "/assets/work/siapkanda.png",
     live: "https://deer.baleprasutisingaperbangsa.com/login",
@@ -69,7 +69,7 @@ const projects = [
     category: "fullstack",
     title: "Portal Pelayanan",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
+      "PAK HAJI adalah singkatan dari Pelayanan Whatsapp Karawang Handal dan Teruji, sebuah aplikasi berbasis WA Chat Bot yang memudahkan warga Karawang untuk mengakses berbagai layanan publik melalui WhatsApp dengan cepat dan praktis.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Node JS" }, { name: "Nuxt.js" }],
     image: "/assets/work/pakhaji.png",
     live: "https://egret.baleprasutisingaperbangsa.com/",
@@ -78,9 +78,9 @@ const projects = [
   {
     num: "03",
     category: "fullstack",
-    title: "Vendor Management Sistem",
+    title: "VMS",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
+      "Vendor Management System (VMS) dari Pakuwon Group adalah platform digital yang dirancang untuk mengelola hubungan antara perusahaan dan vendor secara efisien. Sistem ini memungkinkan proses pendaftaran, evaluasi, serta pemantauan kinerja vendor dalam satu sistem terintegrasi",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "PHP" }, { name: "Codeigniter 3" }],
     image: "/assets/work/vms.png",
     live: "https://vms.pakuwon.com/",
@@ -113,14 +113,14 @@ const Work = () => {
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/* outline num */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
-                {project.num}
+                {project.num} {project.title}
               </div>
               {/* project category */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category} project
               </h2>
               {/* project description */}
-              <p className="text-white/60">{project.description}</p>
+              <p className="text-white/60 text-justify">{project.description}</p>
               {/* stack */}
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
